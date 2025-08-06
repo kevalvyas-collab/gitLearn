@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Modern JavaScript target for output
+    "module": "NodeNext", //  <--- IMPORTANT: Tells TypeScript to emit Node.js-compatible ES Modules
+    "moduleResolution": "NodeNext", //  <--- IMPORTANT: Instructs TypeScript to use Node.js's ESM resolution algorithm
+    "outDir": "./dist", //  Output compiled files to 'dist'
+    "esModuleInterop": true, // Enables compatibility for CommonJS/ES Module imports
+    "forceConsistentCasingInFileNames": true, // Ensures consistent file casing
+    "strict": true, // Enables all strict type-checking options
+    "skipLibCheck": true, // Skips type checking of declaration files (for speed)
+    "baseUrl": "./src", //  <--- IMPORTANT: Base directory for module resolution within TypeScript
+    "rootDir": "./src" //  <--- IMPORTANT: Explicitly defines the root of your source files
+  },
+  "include": [
+    "src/**/*" // Include all TypeScript files in 'src' for compilation
+  ],
+  "exclude": [
+    "node_modules", // Exclude the 'node_modules' directory
+    "dist" // Exclude the 'dist' directory
+  ]
+}
