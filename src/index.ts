@@ -7,3 +7,4 @@ import calculation from "#utils";
 
 console.log(`5 - 3 = ${calculation.subtract(5, 3)}`);
 console.log(`5 + 3 = ${calculation.add(5, 3)}`);
+console.log('bug fix for testing');
